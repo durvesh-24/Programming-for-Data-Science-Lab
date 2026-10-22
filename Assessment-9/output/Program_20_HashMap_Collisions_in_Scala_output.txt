@@ -1,0 +1,28 @@
+Initial HashMap          : List((Alice,85), (Bob,78), (Charlie,92), (David,70))
+Grade of Bob before      : 78
+Grade of Bob after       : 88
+HashMap after duplicate  : List((Alice,85), (Bob,88), (Charlie,92), (David,70))
+Number of entries        : 4
+
+Second HashMap           : List((Alice,90), (Charlie,87), (David,75), (Eva,95))
+Merged (higher grade)    : List((Alice,90), (Bob,88), (Charlie,92), (David,75), (Eva,95))
+
+Chained HashMap (key -> list of grades):
+  Alice -> List(85, 90)
+  Bob -> List(78, 88)
+  Charlie -> List(92)
+
+Inserting into a hash table with 4 buckets:
+  Collision: 'David' hashed to bucket 0, already holding Alice
+  Collision: 'Eva' hashed to bucket 0, already holding Alice, David
+  Collision: 'Frank' hashed to bucket 2, already holding Charlie
+
+Buckets of the hash table:
+  Bucket 0 : Alice -> [85, 90]  =>  David -> [70]  =>  Eva -> [95]
+  Bucket 1 : Bob -> [78]
+  Bucket 2 : Charlie -> [92]  =>  Frank -> [66]
+  Bucket 3 : empty
+
+Lookup Alice   : List(85, 90)
+Lookup Frank   : List(66)
+Lookup Unknown : List()

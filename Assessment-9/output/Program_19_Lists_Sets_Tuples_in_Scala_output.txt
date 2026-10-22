@@ -1,0 +1,16 @@
+List of first five primes : List(2, 3, 5, 7, 11)
+Squared primes            : List(4, 9, 25, 49, 121)
+Original list (unchanged) : List(2, 3, 5, 7, 11)
+
+String                    : "hello world"
+Unique characters (Set)   : Set(e, l, h, r, w, o, d)
+Number of unique chars    : 7
+Second set ("scala world"): Set(s, a, l, c, r, w, o, d)
+Intersection of the sets  : Set(l, r, w, o, d)
+Intersection of Set(5, 1, 2, 3, 4) and Set(4, 5, 6, 7) = Set(5, 4)
+
+Tuple                     : (26,Durvesh,true)
+First element  (Int)      : 26
+Second element (String)   : Durvesh
+Third element  (Boolean)  : true
+Using pattern matching    : number = 26, name = Durvesh, flag = true

@@ -1,0 +1,21 @@
+Integer Array      : [2, 5, 9, 14, 20]
+Length of Array    : 5
+Sum of Elements    : 50
+Sum using .sum     : 50
+
+Fruit Array        : [Apple, Banana, Mango, Orange, Grapes]
+Concatenated Fruits: Apple, Banana, Mango, Orange, Grapes
+
+Elements of the integer array:
+numbers(0) = 2
+numbers(1) = 5
+numbers(2) = 9
+numbers(3) = 14
+numbers(4) = 20
+
+Elements printed using foreach:
+2
+5
+9
+14
+20

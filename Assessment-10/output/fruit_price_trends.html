@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Fruit Price Trends Over Time</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+</head><body><div id="vis"></div>
+<script>vegaEmbed('#vis', {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Fruit Price Trends Over Time",
+  "width": 600, "height": 350,
+  "data": {"values": [
+        {"Date": "2026-10-01", "Fruit": "Apple", "Price": 116.72},
+        {"Date": "2026-10-01", "Fruit": "Banana", "Price": 42.2},
+        {"Date": "2026-10-01", "Fruit": "Mango", "Price": 152.73},
+        {"Date": "2026-10-01", "Fruit": "Orange", "Price": 78.42},
+        {"Date": "2026-10-02", "Fruit": "Apple", "Price": 125.83},
+        {"Date": "2026-10-02", "Fruit": "Banana", "Price": 45.92},
+        {"Date": "2026-10-02", "Fruit": "Mango", "Price": 147.03},
+        {"Date": "2026-10-02", "Fruit": "Orange", "Price": 82.95},
+        {"Date": "2026-10-03", "Fruit": "Apple", "Price": 128.92},
+        {"Date": "2026-10-03", "Fruit": "Banana", "Price": 47.26},
+        {"Date": "2026-10-03", "Fruit": "Mango", "Price": 147.66},
+        {"Date": "2026-10-03", "Fruit": "Orange", "Price": 84.05},
+        {"Date": "2026-10-04", "Fruit": "Apple", "Price": 130.2},
+        {"Date": "2026-10-04", "Fruit": "Banana", "Price": 45.83},
+        {"Date": "2026-10-04", "Fruit": "Mango", "Price": 141.02},
+        {"Date": "2026-10-04", "Fruit": "Orange", "Price": 81.16},
+        {"Date": "2026-10-05", "Fruit": "Apple", "Price": 129.28},
+        {"Date": "2026-10-05", "Fruit": "Banana", "Price": 46.04},
+        {"Date": "2026-10-05", "Fruit": "Mango", "Price": 134.86},
+        {"Date": "2026-10-05", "Fruit": "Orange", "Price": 83.28},
+        {"Date": "2026-10-06", "Fruit": "Apple", "Price": 133.45},
+        {"Date": "2026-10-06", "Fruit": "Banana", "Price": 47.74},
+        {"Date": "2026-10-06", "Fruit": "Mango", "Price": 132.77},
+        {"Date": "2026-10-06", "Fruit": "Orange", "Price": 85.52},
+        {"Date": "2026-10-07", "Fruit": "Apple", "Price": 136.09},
+        {"Date": "2026-10-07", "Fruit": "Banana", "Price": 51.21},
+        {"Date": "2026-10-07", "Fruit": "Mango", "Price": 131.2},
+        {"Date": "2026-10-07", "Fruit": "Orange", "Price": 85.23},
+        {"Date": "2026-10-08", "Fruit": "Apple", "Price": 135.89},
+        {"Date": "2026-10-08", "Fruit": "Banana", "Price": 46.2},
+        {"Date": "2026-10-08", "Fruit": "Mango", "Price": 131.32},
+        {"Date": "2026-10-08", "Fruit": "Orange", "Price": 88.29},
+        {"Date": "2026-10-09", "Fruit": "Apple", "Price": 138.1},
+        {"Date": "2026-10-09", "Fruit": "Banana", "Price": 46.8},
+        {"Date": "2026-10-09", "Fruit": "Mango", "Price": 125.14},
+        {"Date": "2026-10-09", "Fruit": "Orange", "Price": 89.38},
+        {"Date": "2026-10-10", "Fruit": "Apple", "Price": 143.58},
+        {"Date": "2026-10-10", "Fruit": "Banana", "Price": 54.23},
+        {"Date": "2026-10-10", "Fruit": "Mango", "Price": 125.67},
+        {"Date": "2026-10-10", "Fruit": "Orange", "Price": 92.44}
+  ]},
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "title": "Date"},
+    "y": {"field": "Price", "type": "quantitative", "title": "Price (Rs/kg)"},
+    "color": {"field": "Fruit", "type": "nominal"},
+    "tooltip": [{"field": "Fruit"}, {"field": "Date", "type": "temporal"}, {"field": "Price", "type": "quantitative"}]
+  }
+});</script>
+</body></html>

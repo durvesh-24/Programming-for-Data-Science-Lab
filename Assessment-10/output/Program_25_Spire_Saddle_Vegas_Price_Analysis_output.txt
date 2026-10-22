@@ -1,0 +1,26 @@
+Dataset loaded: 40 rows x 4 columns
+
+Saddle group-by mean price per fruit:
+[4 x 1]
+ Apple -> 131.8060
+Banana ->  47.3430
+ Mango -> 136.9400
+Orange ->  85.0720
+
+Records per fruit:
+[4 x 1]
+ Apple -> 10
+Banana -> 10
+ Mango -> 10
+Orange -> 10
+
+Precise statistics per fruit (Spire Rational):
+  Fruit            Mean       Variance    Std Dev   Exact mean (fraction)
+  Apple        131.8060        49.6565     7.0467   65903/500
+  Banana        47.3430         9.6613     3.1083   47343/1000
+  Mango        136.9400        83.5197     9.1389   6847/50
+  Orange        85.0720        15.1739     3.8954   10634/125
+
+Sum of ten 0.1 values -> Double: 0.9999999999999999 | Spire Rational: 1
+
+Chart saved to fruit_price_trends.html

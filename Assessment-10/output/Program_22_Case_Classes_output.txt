@@ -1,0 +1,35 @@
+List of people:
+  Person(Alice,28,Chennai)
+  Person(Bob,35,Bangalore)
+  Person(Charlie,24,Chennai)
+  Person(David,42,Hyderabad)
+  Person(Emma,31,Bangalore)
+
+People older than 30:
+  Person(Bob,35,Bangalore)
+  Person(David,42,Hyderabad)
+  Person(Emma,31,Bangalore)
+
+People grouped by city:
+  Bangalore -> Bob, Emma
+  Chennai -> Alice, Charlie
+  Hyderabad -> David
+
+Descriptions:
+  Alice is 28 years old and lives in Chennai
+  Bob is 35 years old and lives in Bangalore
+  Charlie is 24 years old and lives in Chennai
+  David is 42 years old and lives in Hyderabad
+  Emma is 31 years old and lives in Bangalore
+
+People sorted by age (ascending):
+  Charlie (24)
+  Alice (28)
+  Emma (31)
+  Bob (35)
+  David (42)
+
+Case class features:
+  copy()          : Person(Alice,29,Chennai)
+  equality (==)   : true
+  pattern match   : name = Alice, age = 28, city = Chennai

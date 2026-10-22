@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Total Revenue by Fruit Type</title>
+<script src="https://cdn.plot.ly/plotly-1.54.1.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+(function () {
+  var data0 = {"x":["Apple","Banana","Mango","Orange"],"name":"Revenue","y":[51641.45,56010.979999999996,44089.32000000001,51980.91999999999],"marker":{"color":"rgb(46, 134, 193)"},"type":"bar"};
+
+  var data = [data0];
+  var layout = {"title":"Total Revenue by Fruit Type","yaxis":{"title":"Revenue (Rs)"},"xaxis":{"title":"Fruit"}};
+ var config = {};
+
+  Plotly.plot('chart', data, layout, config);
+})();
+</script>
+</body>
+</html>
+       

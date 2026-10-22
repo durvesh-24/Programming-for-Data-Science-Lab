@@ -1,0 +1,54 @@
+Dataset loaded: 40 rows x 4 columns
+Columns: Date, Fruit, Price, Quantity
+
+First 8 rows of the dataset:
+[8 x 4]
+           Date  Fruit  Price Quantity 
+     ---------- ------ ------ -------- 
+0 -> 2026-10-01  Apple 116.72       38 
+1 -> 2026-10-01 Banana  42.20      121 
+2 -> 2026-10-01  Mango 152.73       27 
+3 -> 2026-10-01 Orange  78.42       63 
+4 -> 2026-10-02  Apple 125.83       47 
+5 -> 2026-10-02 Banana  45.92      124 
+6 -> 2026-10-02  Mango 147.03       32 
+7 -> 2026-10-02 Orange  82.95       65 
+
+Overall average price    : 100.29
+Total quantity (all)     : 2509
+
+Apple records (10 rows):
+[10 x 4]
+            Date Fruit  Price Quantity 
+      ---------- ----- ------ -------- 
+ 0 -> 2026-10-01 Apple 116.72       38 
+ 4 -> 2026-10-02 Apple 125.83       47 
+ 8 -> 2026-10-03 Apple 128.92       33 
+12 -> 2026-10-04 Apple 130.20       33 
+16 -> 2026-10-05 Apple 129.28       41 
+20 -> 2026-10-06 Apple 133.45       39 
+24 -> 2026-10-07 Apple 136.09       45 
+28 -> 2026-10-08 Apple 135.89       40 
+32 -> 2026-10-09 Apple 138.10       43 
+36 -> 2026-10-10 Apple 143.58       33 
+
+Average price of apples  : Rs 131.81
+Minimum apple price      : Rs 116.72
+Maximum apple price      : Rs 143.58
+
+Apple price by date:
+[10 x 1]
+2026-10-01 -> 116.7200
+2026-10-02 -> 125.8300
+2026-10-03 -> 128.9200
+2026-10-04 -> 130.2000
+2026-10-05 -> 129.2800
+2026-10-06 -> 133.4500
+2026-10-07 -> 136.0900
+2026-10-08 -> 135.8900
+2026-10-09 -> 138.1000
+2026-10-10 -> 143.5800
+
+Day-to-day price change  : +9.11, +3.09, +1.28, -0.92, +4.17, +2.64, -0.20, +2.21, +5.48
+
+Chart saved to apple_price_trend.html

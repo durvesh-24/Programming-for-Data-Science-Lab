@@ -1,0 +1,17 @@
+Records loaded           : 40
+First 5 prices           : DenseVector(116.72, 42.2, 152.73, 78.42, 125.83)
+First 5 quantities       : DenseVector(38.0, 121.0, 27.0, 63.0, 47.0)
+First 5 revenues         : DenseVector(4435.36, 5106.200000000001, 4123.71, 4940.46, 5914.01)
+
+Total revenue per fruit:
+  Apple    : Rs 51,641.45
+  Banana   : Rs 56,010.98
+  Mango    : Rs 44,089.32
+  Orange   : Rs 51,980.92
+
+Grand total revenue      : Rs 203,722.67
+Mean revenue per record  : Rs 5,093.07
+Highest earning fruit    : Banana
+Lowest earning fruit     : Mango
+
+Bar chart saved to fruit_revenue_bar_chart.html
