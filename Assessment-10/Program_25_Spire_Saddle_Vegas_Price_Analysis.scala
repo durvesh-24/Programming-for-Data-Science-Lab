@@ -47,10 +47,10 @@ object SpireSaddlePriceAnalysis {
          |  ]},
          |  "mark": {"type": "line", "point": true},
          |  "encoding": {
-         |    "x": {"field": "Date", "type": "temporal", "title": "Date"},
+         |    "x": {"field": "Date", "type": "ordinal", "title": "Date", "axis": {"labelAngle": -45}},
          |    "y": {"field": "Price", "type": "quantitative", "title": "Price (Rs/kg)"},
          |    "color": {"field": "Fruit", "type": "nominal"},
-         |    "tooltip": [{"field": "Fruit"}, {"field": "Date", "type": "temporal"}, {"field": "Price", "type": "quantitative"}]
+         |    "tooltip": [{"field": "Fruit"}, {"field": "Date", "type": "ordinal"}, {"field": "Price", "type": "quantitative"}]
          |  }
          |}""".stripMargin
     val html =

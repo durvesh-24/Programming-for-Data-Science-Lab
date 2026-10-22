@@ -36,9 +36,9 @@ object SaddleApplePrices {
          |  ]},
          |  "mark": {"type": "line", "point": true},
          |  "encoding": {
-         |    "x": {"field": "$xField", "type": "temporal", "title": "$xField"},
+         |    "x": {"field": "$xField", "type": "ordinal", "title": "$xField", "axis": {"labelAngle": -45}},
          |    "y": {"field": "$yField", "type": "quantitative", "title": "$yField (Rs/kg)", "scale": {"zero": false}},
-         |    "tooltip": [{"field": "$xField", "type": "temporal"}, {"field": "$yField", "type": "quantitative"}]
+         |    "tooltip": [{"field": "$xField", "type": "ordinal"}, {"field": "$yField", "type": "quantitative"}]
          |  }
          |}""".stripMargin
     val html =
